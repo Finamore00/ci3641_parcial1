@@ -24,12 +24,23 @@ dada por la siguiente formula:
 */
 
 func MatrixTimesTransposed(A: [[Int]]) -> [[Int]] {
+    //Asumiendo correctitud del input
+    let N = A[0].count
+    var result: [[Int]] = Array(repeating: Array(repeating: 0, count: N), count: N)
 
+    for i in 0 ..< N {
+        for j in 0 ..< N {
+            var sum = 0
+            for k in 0 ..< N {
+                sum += A[i][k] * A[j][k]
+            }
+            result[i][j] = sum
+        }
+    }
+
+    return result
 }
-
 /*
 Pequeño cliente para dar al usuario a escoger el programa a ejecutar y el input a ingresar
 para el mismo.
 */
-
-func main()
