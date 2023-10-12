@@ -7,7 +7,7 @@ rotar(w,k) =
     | rotar(x ++ [a], k-1) si k > 0 and w == ax and a es caracter
 */
 
-func StringRotate(w: String, k: Int) -> String {
+public func StringRotate(w: String, k: Int) -> String {
     let r = w.count == 0 ? 0 : k % w.count //Rotaciones efectivas a realizar
 
     return String(w.suffix(w.count - r) + w.prefix(r)) //Substrings pa todos los lenguajes plox
@@ -23,7 +23,7 @@ dada por la siguiente formula:
 (forall i, j | i in [1..N] and j in [1..N]: (AxB)[i][j] = sum(k | k in [1..N] : A[i][k] * B[k][j]))
 */
 
-func MatrixTimesTransposed(A: [[Int]]) -> [[Int]] {
+public func MatrixTimesTransposed(A: [[Int]]) -> [[Int]] {
     //Asumiendo correctitud del input
     let N = A[0].count
     var result: [[Int]] = Array(repeating: Array(repeating: 0, count: N), count: N)
@@ -40,7 +40,3 @@ func MatrixTimesTransposed(A: [[Int]]) -> [[Int]] {
 
     return result
 }
-/*
-Pequeño cliente para dar al usuario a escoger el programa a ejecutar y el input a ingresar
-para el mismo.
-*/
