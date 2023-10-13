@@ -1,4 +1,10 @@
 /*
+Funciones para el inciso 1.b
+
+Autor: Santiago Finamore
+*/
+
+/*
 i. Dada una cadena de caracteres w y un entero no negativo k, calcular la rotacion
 de k posiciones sobre la cadena w. Utilice la siguiente formula como referencia
 
