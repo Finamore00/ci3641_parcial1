@@ -38,6 +38,7 @@ repeat {
                             printRepeatedProgramError(p: newProg!)
                         } else {
                             programs.insert(newProg!)
+                            print("Se definió el programa '\(newProg!.name)' ejecutable en '\(newProg!.language)'")
                         }
                     }
                 case let y where y.hasPrefix("traductor "):
@@ -50,6 +51,7 @@ repeat {
                         } else {
                             translators.insert(newTrans!)
                             manageTranslatorInsertion(t: newTrans!)
+                            print("Se definió un traductor de '\(newTrans!.input)' a '\(newTrans!.output)' escrito en '\(newTrans!.source)'")
                         }
 
                     }
@@ -63,6 +65,7 @@ repeat {
                         } else {
                             interpreters.insert(newInter!)
                             manageInterprterInsertion(i: newInter!)
+                            print("Se definió un intérprete para '\(newInter!.input)' escrito en '\(newInter!.source)'")
                         }
                     }
                 default:
@@ -82,6 +85,6 @@ repeat {
         case "salir":
             exitFlag = 1
         default:
-            print("Pipicito")
+            print("Comando inválido. Lista de comandos disponible ingresando 'help'")
     }
 } while (exitFlag == 0)
