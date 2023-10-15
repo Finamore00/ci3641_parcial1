@@ -8,14 +8,14 @@ let package = Package(
         .executable(name: "BuddySystem", targets: ["BuddySystemClient"])
     ],
     dependencies: [
-        .package(name: "Block", path: "../Block"),
+        .package(name: "Structs", path: "../Structs"),
         .package(name: "BuddySystemFunc", path: "../Functions")
     ],
     targets: [
         .executableTarget(
             name: "BuddySystemClient",
             dependencies: [
-                .byName(name: "Block"),
+                .byName(name: "Structs"),
                 .byName(name: "BuddySystemFunc")
             ]
         )

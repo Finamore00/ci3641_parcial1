@@ -8,13 +8,13 @@ let package = Package(
         .library(name: "BuddySystemFunc", targets: ["BuddySystemFunc"])
     ],
     dependencies: [
-        .package(name: "Block", path: "../Block")
+        .package(name: "Structs", path: "../Structs")
     ],
     targets: [
         .target(
             name: "BuddySystemFunc",
             dependencies: [
-                .byName(name: "Block")
+                .byName(name: "Structs")
             ]
         )
     ]
