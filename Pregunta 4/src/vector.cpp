@@ -64,6 +64,10 @@ namespace VectorLib {
             return x == b.x && y == b.y && z == b.z;
         }
 
+        bool operator!=(Vector const& b) {
+            return x != b.x || y != b.y || z != b.z;
+        }
+
         //Operaciones Vector-escalar
         Vector operator+(double const& n) {
             return Vector(x + n, y + n, z + n);
