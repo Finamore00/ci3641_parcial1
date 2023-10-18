@@ -1,8 +1,8 @@
-#Pregunta 3
+# Pregunta 3
 
 Programa que emula un despachador de memoria que emplea el *buddy system* para asignar recursos.
 
-##¿Cómo correr?
+## ¿Cómo correr?
 
 Para ejecutar ingresar desde la terminal a la carpeta *Client* y ejecutar
 
@@ -10,6 +10,6 @@ Para ejecutar ingresar desde la terminal a la carpeta *Client* y ejecutar
 
 Con `<Numero_bloques>` el número de bloques de memoria a manejar
 
-##Pruebas unitarias
+## Pruebas unitarias
 
 Para ejecutar las pruebas unitarias creadas 
