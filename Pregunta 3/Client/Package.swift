@@ -18,6 +18,12 @@ let package = Package(
                 .byName(name: "Structs"),
                 .byName(name: "BuddySystemFunc")
             ]
+        ),
+        .testTarget(
+            name: "BuddySystemTests",
+            dependencies: [
+                .byName(name: "Structs")
+            ]
         )
     ]
 )
